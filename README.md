@@ -21,4 +21,5 @@ php artisan help migrate{comando que você está com duvida} // Ele mostra tudo 
 O navegador acessa o controller, que o controller acessa o model e depois retorna a view para usuario
 
 ## 08 Introdução a Rotas
-
+Trabalharemos com requisições http na pasta ROUTES 
+e Views na resources/views
