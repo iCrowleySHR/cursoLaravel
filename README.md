@@ -17,3 +17,8 @@ php artisan down    // Coloca a aplicação em modo de manutenção, deixa a apl
 php artisan up      // Coloca a aplicação no ar
 php artisan help migrate{comando que você está com duvida} // Ele mostra tudo que dá pra rodar com o comando, tira duvida
 
+## 07 MVC (Model, View, Controller)
+O navegador acessa o controller, que o controller acessa o model e depois retorna a view para usuario
+
+## 08 Introdução a Rotas
+
