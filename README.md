@@ -23,3 +23,6 @@ O navegador acessa o controller, que o controller acessa o model e depois retorn
 ## 08 Introdução a Rotas
 Trabalharemos com requisições http na pasta ROUTES 
 e Views na resources/views
+
+## 09 Any e Match
+Acesse o arquivo routes/web para ver a aula
