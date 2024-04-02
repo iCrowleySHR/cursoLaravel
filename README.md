@@ -22,7 +22,12 @@ O navegador acessa o controller, que o controller acessa o model e depois retorn
 
 ## 08 Introdução a Rotas
 Trabalharemos com requisições http na pasta ROUTES 
+usando get, post e etc
 e Views na resources/views
 
 ## 09 Any e Match
 Acesse o arquivo routes/web para ver a aula
+
+## 10 Passagem de Parâmetros
+Veja no arquivo routes/web.php
+
