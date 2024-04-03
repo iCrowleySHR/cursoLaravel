@@ -36,3 +36,8 @@ Passamos parametros atraves das functions e entre chaves{}
 Uma maneira mais facil de fazer rotas e como fazer redirecionamento de página
 tudo em routes/web.php
 
+## 12 Rotas nomeadas
+Colocamos nomes na rotas e quando criamos redirecionamentos, chamamos pelo nome,
+se no futuro a rotas mudar, o seu nome não precisa mudar assim não
+influenciando nos seus redirecionamentos
+

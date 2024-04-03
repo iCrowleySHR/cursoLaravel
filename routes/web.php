@@ -13,9 +13,11 @@ Route::get('/', function () {
 
 // Acessa url empresa pelo meio get
 // Route::get('/empresa', function(){
-//     // Retorna o arquivo home.blade.php da resources/views/site/empresa
+//     // Retorna o arquivo empresa.blade.php da resources/views/site/empresa
 //     return view('site/empresa');
 // });
+
+// ============================================================================================================
 
 Route::any('/any', function(){
     return "Permite todo tipo de acesso http (put, delete, get, post)";
@@ -25,6 +27,8 @@ Route::match(['get','post'],'/match',function(){
     return "Permite apenas acessos definidos, no que foi colocado na array foi get e post";
 });
 
+// ============================================================================================================
+
 // Paramentro por URL
 // Caso os parametros da URL estejam vazia vai dar erro 404, para o parametro não ser obrigatorio, basta fazer igual o cat
 // ? e $cat = ''
@@ -33,6 +37,9 @@ Route::get('/produto/{id}/{cat?}', function($id, $cat = ''){
     // URL: http://cursolaravel.test/produto/123/limpeza
 });
 
+// ============================================================================================================
+
+//Redirect e View 
 //Acessar /sobre te levará para /empresa
 //               URL      Para onde vai redirecionar
 Route::redirect('/sobre', 'empresa');
@@ -41,3 +48,16 @@ Route::redirect('/sobre', 'empresa');
 //          URL           Aonde está o arquivo
 Route::view('/empresa' , 'site/empresa');
 
+// ============================================================================================================
+
+//Rotas Nomeadas
+Route::get('/news', function(){
+    return view('news');
+})->name('noticias');
+// Nomeamos a rota news para noticias
+
+Route::get('/novidades', function(){
+    // Na /novidades redirectiona para a /news usando seu Nome (noticias)
+    return redirect()->route('noticias');
+});
+// A rota pode mudar, porem se o nome continuar o redirecionamento não falhará
