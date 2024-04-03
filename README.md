@@ -41,3 +41,7 @@ Colocamos nomes na rotas e quando criamos redirecionamentos, chamamos pelo nome,
 se no futuro a rotas mudar, o seu nome não precisa mudar assim não
 influenciando nos seus redirecionamentos
 
+## 13 Grupo de Rotas
+Aprendemos a colocar um pre nome antes do nome real em varios de uma vex ex: admin.pagina
+e aprendemos a colocar um nome antes da url em varias urls de uma vez ex:admin/pagina
+
