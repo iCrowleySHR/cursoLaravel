@@ -12,10 +12,10 @@ Route::get('/', function () {
 });
 
 // Acessa url empresa pelo meio get
-Route::get('/empresa', function(){
-    // Retorna o arquivo home.blade.php da resources/views/site/empresa
-    return view('site/empresa');
-});
+// Route::get('/empresa', function(){
+//     // Retorna o arquivo home.blade.php da resources/views/site/empresa
+//     return view('site/empresa');
+// });
 
 Route::any('/any', function(){
     return "Permite todo tipo de acesso http (put, delete, get, post)";
@@ -32,3 +32,12 @@ Route::get('/produto/{id}/{cat?}', function($id, $cat = ''){
     return 'O ID enviado pela URL do produto é: '. $id . '<br>' . 'E a categoria é: ' . $cat ;
     // URL: http://cursolaravel.test/produto/123/limpeza
 });
+
+//Acessar /sobre te levará para /empresa
+//               URL      Para onde vai redirecionar
+Route::redirect('/sobre', 'empresa');
+
+//Uma maneira mas facil de fazer rotas
+//          URL           Aonde está o arquivo
+Route::view('/empresa' , 'site/empresa');
+

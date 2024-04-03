@@ -30,4 +30,9 @@ Acesse o arquivo routes/web para ver a aula
 
 ## 10 Passagem de Parâmetros
 Veja no arquivo routes/web.php
+Passamos parametros atraves das functions e entre chaves{}
+
+## 11 Redirect e View
+Uma maneira mais facil de fazer rotas e como fazer redirecionamento de página
+tudo em routes/web.php
 
