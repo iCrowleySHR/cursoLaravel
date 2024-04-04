@@ -45,7 +45,7 @@ Route::get('/produto/{id}/{cat?}', function($id, $cat = ''){
 Route::redirect('/sobre', 'empresa');
 
 //Uma maneira mas facil de fazer rotas
-//          URL           Aonde está o arquivo
+//           URL          Aonde está o arquivo
 Route::view('/empresa' , 'site/empresa');
 
 // ============================================================================================================
@@ -120,3 +120,11 @@ Route::get('/dono', function(){
     return redirect()->route('dono.dashboard');
 });
 
+// ============================================================================================================
+
+//QUANDO TRABALHAMOS COM CONTROLLER, USAMOS NAMESPACE
+use App\Http\Controllers\ProdutoController;
+
+// Controllers
+//          Rota          Arquivo Controller           Qual funçao rodar quando carregar
+Route::get('/controller', [ProdutoController::class , 'index']);

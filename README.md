@@ -45,3 +45,10 @@ influenciando nos seus redirecionamentos
 Aprendemos a colocar um pre nome antes do nome real em varios de uma vex ex: admin.pagina
 e aprendemos a colocar um nome antes da url em varias urls de uma vez ex:admin/pagina
 
+## 14 Controllers
+Foi criado uma rota e um controller, usamos a pasta routes/web.php e app/Http/Controllers
+Para criar uma nova controller, você deve usar o código no terminal:
+php artisan make:controller {Nome do arquivo/classe}
+
+Na criação de controller sempre usar letras MAIUSCULAS: ProdutoController
+
