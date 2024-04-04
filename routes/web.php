@@ -125,6 +125,19 @@ Route::get('/dono', function(){
 //QUANDO TRABALHAMOS COM CONTROLLER, USAMOS NAMESPACE
 use App\Http\Controllers\ProdutoController;
 
-// Controllers
-//          Rota          Arquivo Controller           Qual funçao rodar quando carregar
-Route::get('/controller', [ProdutoController::class , 'index']);
+// Controller
+Route::group([
+    'prefix' => 'controller',
+    'as'     => 'controller.'
+], function(){
+//         Rota  Arquivo Controller          Qual funçao rodar quando carregar
+Route::get('/', [ProdutoController::class , 'index'])->name('index');
+
+// http://localhost/cursoLaravel/public/controller/produto/Gustavo!
+// Pegando parametros com a Controller
+Route::get('/nome/{nome?}' , [ProdutoController::class , 'parametros'])->name('nome');
+
+});
+
+
+
