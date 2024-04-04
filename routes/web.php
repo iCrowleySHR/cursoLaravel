@@ -85,7 +85,7 @@ Route::prefix('admin')->group(function(){
 // Agora automaticamente todo os nomes começaram com noadmin.
 Route::name('noadmin.')->group(function(){
     Route::get('noadmin/dashboard' , function(){
-        return 'noadmin/dashboard <br>' . 'Name é: ' . route('noadmin.users');
+        return 'noadmin/dashboard <br>' . 'Name é: ' . route('noadmin.dashboard');
     })->name('dashboard');
 
     Route::get('noadmin/users' , function(){
@@ -93,7 +93,7 @@ Route::name('noadmin.')->group(function(){
     })->name('users');
 
     Route::get('noadmin/clientes' , function(){
-        return 'noadmin/clientes <br>' . 'Name é: ' . route('noadmin.users');
+        return 'noadmin/clientes <br>' . 'Name é: ' . route('noadmin.clientes');
     })->name('clientes');
 });
 
@@ -130,6 +130,7 @@ Route::group([
     'prefix' => 'controller',
     'as'     => 'controller.'
 ], function(){
+
 //         Rota  Arquivo Controller          Qual funçao rodar quando carregar
 Route::get('/', [ProdutoController::class , 'index'])->name('index');
 

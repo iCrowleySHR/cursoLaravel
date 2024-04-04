@@ -52,3 +52,7 @@ php artisan make:controller {Nome do arquivo/classe}
 
 Na criação de controller sempre usar letras MAIUSCULAS: ProdutoController
 
+## 15 Parametros com a Controller
+Passamos parametros veja no exemplo da routes/web e app/http/controllers
+
+
