@@ -125,6 +125,7 @@ Route::get('/dono', function(){
 //QUANDO TRABALHAMOS COM CONTROLLER, USAMOS NAMESPACE
 use App\Http\Controllers\ProdutoController;
 
+
 // Controller
 Route::group([
     'prefix' => 'controller',
@@ -140,5 +141,13 @@ Route::get('/nome/{nome?}' , [ProdutoController::class , 'parametros'])->name('n
 
 });
 
+// ============================================================================================================
 
+// 16 RESOURCE
+// Incluir o ResourceController
+use App\Http\Controllers\ResourceController;
+
+// Já está configurada para rodar a função index, graças ao resource
+//               URL        Classe Controller
+Route::resource('resource', ResourceController::class);
 

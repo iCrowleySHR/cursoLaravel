@@ -56,3 +56,14 @@ Na criação de controller sempre usar letras MAIUSCULAS: ProdutoController
 Passamos parametros veja no exemplo da routes/web e app/http/controllers
 
 
+## 16 Resource
+Para criar um controller com funções já preparada para montar, usamos esse comando no terminal
+Ele cria funções vazias já configuradas 
+php artisan make:controller {NomedaController} --resource
+
+Quando você usa o comando
+php artisan route:list
+
+Ele lista todas as rotas e métodos, exemplo, com o resource ele gera funções configuradas,
+que já tem URLS configuradas para dar delete no banco ou inserir, esse comando so mostra
+as rotas.
