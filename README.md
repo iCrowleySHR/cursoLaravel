@@ -69,6 +69,6 @@ que já tem URLS configuradas para dar delete no banco ou inserir, esse comando 
 as rotas. Lista todas as rotas da aplicação
 
 ## 17 Route list, clear e cache
-os comandos, o cara não recomendo usar em produção, não rodei no PROJETO!!!
+os comandos, o cara não recomendo usar em produção
 php artisan route:cache     // Cria um arquivo de routas cache para deixar mais rapido as requisições
 php artisan route:clear     // Tira o arquivo criado acima do cache
