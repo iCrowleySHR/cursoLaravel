@@ -37,7 +37,7 @@ Uma maneira mais facil de fazer rotas e como fazer redirecionamento de página
 tudo em routes/web.php
 
 ## 12 Rotas nomeadas
-Colocamos nomes na rotas e quando criamos redirecionamentos, chamamos pelo nome,
+33Colocamos nomes na rotas e quando criamos redirecionamentos, chamamos pelo nome,
 se no futuro a rotas mudar, o seu nome não precisa mudar assim não
 influenciando nos seus redirecionamentos
 
@@ -58,6 +58,7 @@ Passamos parametros veja no exemplo da routes/web e app/http/controllers
 
 ## 16 Resource
 Para criar um controller com funções já preparada para montar, usamos esse comando no terminal
+
 Ele cria funções vazias já configuradas 
 php artisan make:controller {NomedaController} --resource
 
@@ -72,3 +73,23 @@ as rotas. Lista todas as rotas da aplicação
 os comandos, o cara não recomendo usar em produção
 php artisan route:cache     // Cria um arquivo de routas cache para deixar mais rapido as requisições
 php artisan route:clear     // Tira o arquivo criado acima do cache
+
+## 18 Banco de dados
+Use o 
+php artisan migrate
+para rodar, as migrate já existentes no banco, assim alteramos depois
+
+## 19 Entendendo as migrates
+
+php artisan migrate:rollback // Reverte os migrates rodados
+php artisan migrate:status   // Mostra os status das migrates, se o arquivo já foi rodado
+
+## 20 Criado um mirgrate
+
+Assim como o controller, para criar um migration usamos esse comando
+php artisan make:migration {Nome da Migrate}
+
+para deixar o migration pre configurado você precisa seguir esse padrão no nome!:
+create_{nomeTabela}_table
+ou 
+php artisan make:migration {nomeArquivo} --create={nomeTabela}
