@@ -93,3 +93,21 @@ para deixar o migration pre configurado você precisa seguir esse padrão no nom
 create_{nomeTabela}_table
 ou 
 php artisan make:migration {nomeArquivo} --create={nomeTabela}
+
+## 21 Excluindo e editando tabelas (migration)
+Para atualizar a tabela produtos que criamos, criaremos uma nova migrate
+chamada alterar_nome_tabela_produtos, nela usaremos a função rename e rodaremos
+a migrate
+
+Editaremos uma tabela e Excluiremos uma tabela
+usando o migration!
+
+        //Excluir a tabela Produto
+        //Schema::drop('produto');
+        //ou
+        //Excluir se existir a tabela produto
+        Schema::dropIfExists('produto');
+
+        //Nela usaremos a função rename para alterar o nome da tabela que criamos no terminal
+        //              Nome TB   Novo Nome
+        Schema::rename('produtos','produto');
