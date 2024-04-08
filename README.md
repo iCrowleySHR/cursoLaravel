@@ -81,7 +81,7 @@ para rodar, as migrate já existentes no banco, assim alteramos depois
 
 ## 19 Entendendo as migrates
 
-php artisan migrate:rollback // Reverte os migrates rodados
+php artisan migrate:rollback // Reverte a ultima migração!
 php artisan migrate:status   // Mostra os status das migrates, se o arquivo já foi rodado
 
 ## 20 Criado um mirgrate
@@ -111,3 +111,9 @@ usando o migration!
         //Nela usaremos a função rename para alterar o nome da tabela que criamos no terminal
         //              Nome TB   Novo Nome
         Schema::rename('produtos','produto');
+
+## 22 Reset, Refresh e Fresh
+
+php artisan migration:reset     // Apaga todas as migrations rodadas
+php artisan migration:refresh   // Apaga todas as tabelas e roda as migrations de novo
+php artisan migraion::fresh     //  
