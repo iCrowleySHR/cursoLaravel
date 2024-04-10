@@ -122,4 +122,11 @@ php artisan migrate::fresh     // Apaga as tabelas e roda novamente
 Para modificar uma coluna, consute a migration alteração banco, aonde alteramos
 o noma da coluna e apagamos uma colunas
 
-## 24
+## 24 Entendendo os Models
+é uma representação de uma entidade do banco de dados
+
+php artisan make:model {Nome da model}
+fica em app/models/
+
+para retornar um array com dados no banco no controller
+consulte os arquivos: ProdutoController e models/Produto
