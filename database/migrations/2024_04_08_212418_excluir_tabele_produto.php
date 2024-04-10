@@ -12,10 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         //Excluir a tabela Produto
-        //Schema::drop('produto');
+        // Schema::drop('produto');
         //ou
         //Excluir se existir a tabela produto
-        Schema::dropIfExists('produto');
+        // Schema::dropIfExists('produto');
     }
 
     /**

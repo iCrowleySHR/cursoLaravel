@@ -114,6 +114,12 @@ usando o migration!
 
 ## 22 Reset, Refresh e Fresh
 
-php artisan migration:reset     // Apaga todas as migrations rodadas
-php artisan migration:refresh   // Apaga todas as tabelas e roda as migrations de novo
-php artisan migraion::fresh     //  
+php artisan migrate:reset     // Apaga todas as migrations rodadas
+php artisan migrate:refresh   // Apaga todas as tabelas e roda as migrations de novo
+php artisan migrate::fresh     // Apaga as tabelas e roda novamente
+
+## 23 Modificando Colunas
+Para modificar uma coluna, consute a migration alteração banco, aonde alteramos
+o noma da coluna e apagamos uma colunas
+
+## 24
