@@ -12,13 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         // Tabela que vai ter a alteração
-        Schema::table('produto', function(Blueprint $table){
-            //Nome atual da coluna e novo nome
-            $table->renameColumn('nomee','nome');
+        // Schema::table('produto', function(Blueprint $table){
+        //     //Nome atual da coluna e novo nome
+        //     // $table->renameColumn('nomee','nome');
 
-            // nome da coluna que vai remover
-            $table->dropColumn('nomeCompleto');
-        });
+        //     // nome da coluna que vai remover
+        //     // $table->dropColumn('nomeCompleto');
+        // });
     }
 
     /**

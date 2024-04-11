@@ -130,3 +130,17 @@ fica em app/models/
 
 para retornar um array com dados no banco no controller
 consulte os arquivos: ProdutoController e models/Produto
+
+## 25 Criando tabelas Users, Categorias e Produtos
+Para criar um model e criar ao mesmo tempo uma migration, basta usar
+php artisan make:model nomeArquivo --migration
+
+para criar tambem o controller
+php artisan make:model nomeArquivo --migration --controller --resource
+ou 
+php artisan make:model nomeArquivo -m
+ou
+php artisan make:model nomeArquivo -mcr //completao
+
+o migration roda em modo sequencial, para enviar isso em migration, basta mudar a numeração para
+mudar a posição da migration

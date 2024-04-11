@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+// use App\Models\Produto;
 
 class ProdutoController extends Controller
 {
@@ -11,8 +12,10 @@ class ProdutoController extends Controller
      */
     public function index()
     {
-        //$produtos acessa a model Produto e acessa tudo
+        //$produtos acessa a model Produto e acessa tudo ou usa o use
         $produtos = \App\Models\Produto::all();
+
+        // $produtos = Produto:all();
 
         //dd e como se fosse o varDump, debuga
         dd($produtos);

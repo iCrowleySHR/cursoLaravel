@@ -13,7 +13,7 @@ return new class extends Migration
     {
         //Nela usaremos a função rename para alterar o nome da tabela que criamos no terminal
         //              Nome TB   Novo Nome
-        Schema::rename('produtos','produto');
+        // Schema::rename('produtos','produto');
     }
 
     /**
