@@ -17,12 +17,9 @@ class DatabaseSeeder extends Seeder
 
         // Precisamos colocar qual classe vai rodar alguma seeder
         $this->call([
-            Users::class,
+            // Users::class,
+            CategoriasSeeder::class,
         ]);
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
     }
 }

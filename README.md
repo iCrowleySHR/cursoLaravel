@@ -145,7 +145,7 @@ php artisan make:model nomeArquivo -mcr //completao
 o migration roda em modo sequencial, para enviar isso em migration, basta mudar a numeração para
 mudar a posição da migration
 
-# 26 Seeder
+## 26 Seeder
 Seeder e como se fosse uma arquivo de inserção, aonde rodamos e inserimos dados no banco
 veja o arquivo User da Model
 
@@ -154,3 +154,14 @@ php artisan make:seeder nomeDaSeeder
 
 Depois de criada, para rodar esse comando
 php artisan db:seed
+
+## 27 Factory (Inserção de dados no banco em massa)
+O comando para gerar um arquivo factory é:
+php artisan make:factory nome
+
+Depois de configurar o arquivo de factory você deve criar uma seeder para
+rodar
+
+php artisan make:seeder nomeArquivo
+
+devemos configurar a DatabaseSeeder e a CategoriasSeeder
