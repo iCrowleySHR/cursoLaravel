@@ -165,3 +165,12 @@ rodar
 php artisan make:seeder nomeArquivo
 
 devemos configurar a DatabaseSeeder e a CategoriasSeeder
+
+## 28 mfscr
+Para criar todos os arquivos de uma vez:
+migration, factory, seed, controller resource
+
+so usar o:
+php artisan make:model -mfscr nome
+ao inves do 
+php artisan make model --migration --factory --seed --controller --resource
