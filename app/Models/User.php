@@ -16,8 +16,11 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+
+     // colunas que são permitidos inserções em massa
     protected $fillable = [
-        'name',
+        'firstname',
+        'lastname',
         'email',
         'password',
     ];

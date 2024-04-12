@@ -28,8 +28,8 @@ return new class extends Migration
             // um titulo para url
             $table->string('slug');
 
-            // guarda o caminho da imagem
-            $table->string('imagem');
+            // guarda o caminho da imagem aceita nulo
+            $table->string('imagem')->nullable();
 
             // coluna de chave estrangeira
             $table->unsignedBigInteger('id_user');

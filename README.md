@@ -144,3 +144,13 @@ php artisan make:model nomeArquivo -mcr //completao
 
 o migration roda em modo sequencial, para enviar isso em migration, basta mudar a numeração para
 mudar a posição da migration
+
+# 26 Seeder
+Seeder e como se fosse uma arquivo de inserção, aonde rodamos e inserimos dados no banco
+veja o arquivo User da Model
+
+para criar uma seeder:
+php artisan make:seeder nomeDaSeeder
+
+Depois de criada, para rodar esse comando
+php artisan db:seed
