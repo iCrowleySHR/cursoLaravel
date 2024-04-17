@@ -16,7 +16,7 @@ class CategoriasSeeder extends Seeder
     public function run(): void
     {
         // Chamamos a class e nela colocamos a quantidade de inserções que queremos
-        Categoria::factory(1000)->create();
+        Categoria::factory(10)->create();
 
         //Agora vamos para DatabaseSeeder
     }

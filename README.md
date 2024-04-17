@@ -174,3 +174,10 @@ so usar o:
 php artisan make:model -mfscr nome
 ao inves do 
 php artisan make model --migration --factory --seed --controller --resource
+
+## 29 Factory Produtos e StrSlug
+Nessa aula criaremos uma factory para a tabela produto, e inserimos dados em tabelas com chaves
+estrageira!
+
+Veja tudo que usamos em
+ProdutosSeeder e ProdutoFactory!

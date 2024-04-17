@@ -18,7 +18,8 @@ class DatabaseSeeder extends Seeder
         // Precisamos colocar qual classe vai rodar alguma seeder
         $this->call([
             // Users::class,
-            CategoriasSeeder::class,
+            // CategoriasSeeder::class,
+            ProdutosSeeder::class,
         ]);
 
     }

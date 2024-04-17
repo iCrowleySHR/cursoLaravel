@@ -10,5 +10,5 @@ class Produto extends Model
     use HasFactory;
 
     // Caso não puxe automaticamente, configure a variavel $table
-    protected $table = 'produto' ;
+    protected $table = 'produtos' ;
 }
