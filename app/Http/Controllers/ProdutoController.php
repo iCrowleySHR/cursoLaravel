@@ -12,13 +12,21 @@ class ProdutoController extends Controller
      */
     public function index()
     {
+        $nome = 'gustavo';
+        $idade = '17';
+
+        //Pegamos essas variaveis é enviamos para a view!!! Veja o resto na view News
+        return view("asdsad");
+
         //$produtos acessa a model Produto e acessa tudo ou usa o use
-        $produtos = \App\Models\Produto::all();
+        // $produtos = \App\Models\Produto::all();
 
         // $produtos = Produto:all();
 
         //dd e como se fosse o varDump, debuga
-        dd($produtos);
+        // dd($produtos);
+
+
     }
 
     /**

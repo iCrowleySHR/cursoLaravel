@@ -181,3 +181,9 @@ estrageira!
 
 Veja tudo que usamos em
 ProdutosSeeder e ProdutoFactory!
+
+## 30 Relacionamento
+Criação da tabela regras e contatos tendo os seus relacionamentos
+REGRAS E CONTATO
+
+## 31 Introdução as views
