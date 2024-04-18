@@ -1,3 +1,6 @@
+php artisan route:cache
+php artisan serve
+
 ## 05 ENV E ARTISAN
 Atraves do .env configuramos todo o sistema, como nome do banco e etc
 Artisan: Atraves desse arquivo rodamos codigos no terminal para rodar migrate, live server e etc

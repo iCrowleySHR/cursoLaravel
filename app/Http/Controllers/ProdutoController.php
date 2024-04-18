@@ -13,12 +13,17 @@ class ProdutoController extends Controller
     public function index()
     {
         $nome = 'gustavo';
-        $idade = '17';
+        $idade = '<h1>17</h1>';
+        $html = '<h1>HTMLL</h1>';
 
         //Pegamos essas variaveis é enviamos para a view!!! Veja o resto na view News
-        return view("asdsad");
+        return view("news", [
+            'nome'  => $nome,
+            'idade' => $idade,
+            'html'  => $html
+        ]);
 
-        //$produtos acessa a model Produto e acessa tudo ou usa o use
+        // $produtos acessa a model Produto e acessa tudo ou usa o use
         // $produtos = \App\Models\Produto::all();
 
         // $produtos = Produto:all();
@@ -76,15 +81,15 @@ class ProdutoController extends Controller
     {
         //
     }
-    public function parametros($nome = ''){
+    public function parametros($nome = '')
+    {
 
         //http://localhost/cursoLaravel/public/controller/produto/Gustavo!
-        
-        if(empty($nome)){
+
+        if (empty($nome)) {
             return "Parace que você não digitou nenhum nome na dURL!";
-        }else{
-            return "O seu nome segundo a URL é: ". $nome;
+        } else {
+            return "O seu nome segundo a URL é: " . $nome;
         }
-        
     }
 }
