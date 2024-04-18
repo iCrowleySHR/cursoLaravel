@@ -17,11 +17,15 @@ class ProdutoController extends Controller
         $html = '<h1>HTMLL</h1>';
 
         //Pegamos essas variaveis é enviamos para a view!!! Veja o resto na view News
-        return view("news", [
-            'nome'  => $nome,
-            'idade' => $idade,
-            'html'  => $html
-        ]);
+        // return view("news", [
+        //     'nome'  => $nome,
+        //     'idade' => $idade,
+        //     'html'  => $html
+        // ]);
+
+        //OU
+
+        return view('site.empresa', compact('nome','idade','html'));
 
         // $produtos acessa a model Produto e acessa tudo ou usa o use
         // $produtos = \App\Models\Produto::all();

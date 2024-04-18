@@ -190,3 +190,5 @@ Criação da tabela regras e contatos tendo os seus relacionamentos
 REGRAS E CONTATO
 
 ## 31 Introdução as views
+Fazemos a introdução a views e como ligar com a controller e passar dados!!
+arquivo news e o controllerProduto
