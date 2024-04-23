@@ -25,7 +25,7 @@ class ProdutoController extends Controller
 
         //OU
 
-        return view('site.empresa', compact('nome','idade','html'));
+        return view('site.home', compact('nome','idade','html'));
 
         // $produtos acessa a model Produto e acessa tudo ou usa o use
         // $produtos = \App\Models\Produto::all();
