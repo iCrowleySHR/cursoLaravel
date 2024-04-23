@@ -196,8 +196,13 @@ arquivo news e o controllerProduto
 ## 32 Section, Yield e Extends
 Tudo isso para criamos as views com mais facilidades,
 tudo pode ser encontrado
+tudo na view/site/home e view/layout/layout
 
 ## 33 Laravel Snippers
 Instalar extensões que ajude na produção das views
 Laravel Snippets
 Laravel Blade Snippets
+
+## 34 Comentários e Operador Ternário
+Aprendemos a fazer comentários e como usar alguns operadores ternarios? {{}}
+tudo na view/site/home e view/layout/layout
