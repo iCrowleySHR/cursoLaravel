@@ -192,3 +192,7 @@ REGRAS E CONTATO
 ## 31 Introdução as views
 Fazemos a introdução a views e como ligar com a controller e passar dados!!
 arquivo news e o controllerProduto
+
+## 32 Section, Yield e Extends
+Tudo isso para criamos as views com mais facilidades,
+tudo pode ser encontrado
