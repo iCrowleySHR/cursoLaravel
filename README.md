@@ -206,3 +206,8 @@ Laravel Blade Snippets
 ## 34 Comentários e Operador Ternário
 Aprendemos a fazer comentários e como usar alguns operadores ternarios? {{}}
 tudo na view/site/home e view/layout/layout
+
+## 35 Customizando views de erro
+Para criar a view de erro, basta criar uma pasta chamada erros na
+view e nela colocar os erros:
+404.blade.php > quando der o erro 404 mostrará essa página
