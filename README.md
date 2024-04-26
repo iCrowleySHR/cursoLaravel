@@ -211,3 +211,8 @@ tudo na view/site/home e view/layout/layout
 Para criar a view de erro, basta criar uma pasta chamada erros na
 view e nela colocar os erros:
 404.blade.php > quando der o erro 404 mostrará essa página
+
+## 36 Estrutura de controlle
+if else e os caramba no que na view
+
+## 37 Estrutura de Repetição

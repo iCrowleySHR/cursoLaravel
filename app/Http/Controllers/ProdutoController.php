@@ -13,8 +13,9 @@ class ProdutoController extends Controller
     public function index()
     {
         $nome = 'gustavo';
-        $idade = '<h1>17</h1>';
+        $idade = '17';
         $html = '<h1>HTMLL</h1>';
+        $variavelVazia = '';
 
         //Pegamos essas variaveis é enviamos para a view!!! Veja o resto na view News
         // return view("news", [
@@ -25,7 +26,7 @@ class ProdutoController extends Controller
 
         //OU
 
-        return view('site.home', compact('nome','idade','html'));
+        return view('site.home', compact('nome','idade','html', 'variavelVazia'));
 
         // $produtos acessa a model Produto e acessa tudo ou usa o use
         // $produtos = \App\Models\Produto::all();
